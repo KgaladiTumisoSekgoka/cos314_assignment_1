@@ -1,4 +1,3 @@
-import javax.naming.directory.SearchResult;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -75,7 +74,7 @@ public class Main {
 
         if (result.pathFound && result.path != null) {
             System.out.println("Path length: " + result.path.size());
-            // Just remember to uncomment to print path coordinates
+            // Uncomment to print path coordinates
             // System.out.println("Path: " + result.path);
         }
     }

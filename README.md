@@ -25,6 +25,11 @@ u26594499_assignment/
 │   └── AStar.java             # A* Search implementation
 ├── README.md                  # This file
 ├── University               # This houses the grid
+└── out\
+    ├── artifacts\
+    │    └── WallEPathfinding\
+    │           └── WallEPathfinding.jar # jar folder
+    └── production
 ```
 ### Compilation Instructions
 
@@ -47,19 +52,15 @@ Option 2: Using Eclipse
 
 Option 3: Command Line
 ```bash
-# Navigate to project directory
-cd /path/to/u26594499_assignment
+cd u26594499_assignment
 
-# Compile all Java files
+mkdir -p out
 javac -d out src/*.java
 
-# Create manifest file
 echo "Main-Class: Main" > MANIFEST.MF
 
-# Package into JAR
 jar cvfm WallEPathfinding.jar MANIFEST.MF -C out .
 
-# Execute the JAR
 java -jar WallEPathfinding.jar
 ```
 
